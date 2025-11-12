@@ -1,2 +1,2 @@
-一节无聊的java实验课上我打算学习怎么使用git这个版本管理软件
-
+# git-use
+i am learning the use of git
