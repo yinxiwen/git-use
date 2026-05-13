@@ -40,7 +40,7 @@ markdown代码格式：
 ```
 5. 推送文件到远程仓库：git push origin branch_name，这一步是告诉git你要将本地仓库的文件推送到远程仓库的哪个分支。默认是main分支。代码如下：
 ```
-    git push origin main #推送main分支到远程仓库
+    git push -u origin main #触发登录认证然后就可以推送了
 ```
 同时再推送之前需要配置git的用户名和邮箱，代码如下：
 ```
@@ -48,4 +48,22 @@ markdown代码格式：
     git config --global user.email "your email"
 ```
 查看结果如下：
-！[git配置](pic/gitconfig.png)
+![git配置](pic/gitconfig.png)
+(语法细节真的很重要，每个空格和括号都很重要)
+推送结果如下：
+![push](pic/push.png)
+再看看GitHub上的效果：
+![github](pic/github.png)
+## 好神奇！！！
+## 进阶学习
+1. 分支管理：
+   原因：为了在不同功能之间切换，避免代码冲突。
+   git branch branch_name创建分支，git checkout branch_name切换分支，git merge branch_name合并分支。
+    代码如下：
+    ```
+        git branch branch_name #创建分支
+        git checkout branch_name #切换分支
+        git merge branch_name #合并分支
+    ```
+测试结果：
+![branch](pic/branch.png)
