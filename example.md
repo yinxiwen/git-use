@@ -88,15 +88,36 @@ github效果如下：
    原因：为了避免因为错误操作导致的问题。
    git reset --hard commit_id回滚到指定版本，git revert commit_id回滚到指定版本并生成一个新的提交。
     代码如下：
-    ```
-        git reset --hard commit_id #回滚到指定版本
-        git revert commit_id #回滚到指定版本并生成一个新的提交
-    ```
+```
+    git reset --hard commit_id #回滚到指定版本,前提是关闭所有未提交的文件
+    git revert commit_id #回滚到指定版本并生成一个新的提交
+```
+操作结果如下：
+![reset](pic/reset.png)
 3. 日志查看：
     原因：为了查看历史版本，方便回滚操作。
     git log查看所有提交记录，git log --oneline查看所有提交记录的简略版本。
     代码如下：
-    ```
-        git log #查看所有提交记录
-        git log --oneline #查看所有提交记录的简略版本
-    ```
+```
+    git log #查看所有提交记录
+    git log --oneline #查看所有提交记录的简略版本
+    git log --oneline --graph #查看所有提交记录的简略版本并显示分支图
+```
+操作结果如下：
+![log](pic/log.png) 
+
+## 总结
+1. git init初始化git仓库
+2. git clone url克隆远程仓库
+3. git add filename添加文件到暂存区
+4. git add .添加所有文件到暂存区
+5. git commit -m "message"提交文件到本地仓库
+6. git push -u origin branch_name推送文件到远程仓库
+7. git branch branch_name创建分支
+8. git checkout branch_name切换分支
+9. git merge branch_name合并分支
+10. git reset --hard commit_id回滚到指定版本,前提是关闭所有未提交的文件
+11. git revert commit_id回滚到指定版本并生成一个新的提交
+12. git log查看所有提交记录
+13. git log --oneline查看所有提交记录的简略版本
+14. git log --oneline --graph查看所有提交记录的简略版本并显示分支图
