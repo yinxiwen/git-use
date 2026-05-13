@@ -84,3 +84,19 @@ github效果如下：
 ![githubmerge](pic/githubmerge.png)
 两种不同的合并方式：
 ![2merge](pic/2merge.png)
+2. 回滚操作：
+   原因：为了避免因为错误操作导致的问题。
+   git reset --hard commit_id回滚到指定版本，git revert commit_id回滚到指定版本并生成一个新的提交。
+    代码如下：
+    ```
+        git reset --hard commit_id #回滚到指定版本
+        git revert commit_id #回滚到指定版本并生成一个新的提交
+    ```
+3. 日志查看：
+    原因：为了查看历史版本，方便回滚操作。
+    git log查看所有提交记录，git log --oneline查看所有提交记录的简略版本。
+    代码如下：
+    ```
+        git log #查看所有提交记录
+        git log --oneline #查看所有提交记录的简略版本
+    ```
