@@ -67,3 +67,8 @@ markdown代码格式：
     ```
 测试结果：
 ![branch](pic/branch.png)
+接着提交分支到远程仓库：
+![pushbranch](pic/pushbranch.png)
+github效果如下：
+![githubbranch](pic/githubbranch1.png)
+![githubbranch2](pic/githubbranch2.png)
