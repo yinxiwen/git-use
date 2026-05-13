@@ -72,3 +72,15 @@ markdown代码格式：
 github效果如下：
 ![githubbranch](pic/githubbranch1.png)
 ![githubbranch2](pic/githubbranch2.png)
+接下来合并分支：
+代码如下：
+```
+    git checkout main #切换到main分支
+    git merge branch_name #合并分支
+```
+测试结果：
+![merge](pic/merge.png)
+github效果如下：
+![githubmerge](pic/githubmerge.png)
+两种不同的合并方式：
+![2merge](pic/2merge.png)
