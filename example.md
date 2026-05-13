@@ -1,4 +1,4 @@
-今天心血来潮打算仔细学习一下git的使用，之前只是浅尝辄止没能应用起来，隔一段时间就生疏了。
+今天心血来潮打算仔细学习一下git的使用，之前只是浅尝辄止没能应用起来，隔一段时间就生疏了,想要学好一件事物必须得用上它。
 为了以后的独立工作，必须得将这项技能掌握好。
 ## git的意义在于
 1. 版本控制：git可以记录文件的历史版本，方便回退到之前的状态，避免数据丢失。
@@ -31,6 +31,21 @@ markdown代码格式：
     git add . #添加所有文件到暂存区
 ```
 实际测试：
-![add](pic/add.png)
-
-
+![addandcommit](pic/add.png)
+(刚才犯了一个错误，我不应该在git clone之前创建一个文件夹的并且初始化git仓库的，这样会导致两个仓库冲突，于是我直接进入克隆的文件夹，初始化git仓库，然后添加文件到暂存区，最后提交到远程仓库。)
+4. 提交文件到本地仓库：git commit -m "commit message"，这一步是告诉git你要提交的文件的描述信息，方便以后查看历史版本。
+代码如下：
+```
+    git commit -m "message"
+```
+5. 推送文件到远程仓库：git push origin branch_name，这一步是告诉git你要将本地仓库的文件推送到远程仓库的哪个分支。默认是main分支。代码如下：
+```
+    git push origin main #推送main分支到远程仓库
+```
+同时再推送之前需要配置git的用户名和邮箱，代码如下：
+```
+    git config --global user.name "your name"
+    git config --global user.email "your email"
+```
+查看结果如下：
+！[git配置](pic/gitconfig.png)
